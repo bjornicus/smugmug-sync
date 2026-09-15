@@ -1,0 +1,22 @@
+{
+  "extractor": {
+    "smugmug": {
+      "access-token": "",
+      "access-token-secret": "",
+      "base-directory": "D:/smugmug_backup",
+      "archive": "D:/smugmug_backup/.sync-archive.sqlite3",
+      "videos": true,
+      "sleep-request": 0.3,
+      "sleep-retries": 5.0,
+      "timeout": 60.0,
+      "album": {
+        "directory": [
+          "{User[NickName]}",
+          "\fE Album['UrlPath'].strip('/').split('/')"
+        ],
+        "filename": "\fE Image['FileName'].rsplit('.', 1)[0] + '_' + Image['ImageKey'] + '.' + extension",
+        "post-filter": "Album['UrlName'] not in ('Android-Auto-Upload', 'Android-Backup')"
+      }
+    }
+  }
+}

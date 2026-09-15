@@ -1,0 +1,12 @@
+# Credentials
+config.json
+
+# Media (if base-directory is changed to this local folder)
+mirror/
+
+# SQLite archive and its journal/WAL files; keep the legacy name ignored too
+.sync-archive.sqlite3*
+.sync-archive.txt*
+
+# Optional logs
+.gallery-dl.log*
