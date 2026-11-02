@@ -1,12 +1,10 @@
 # Credentials
 config.json
 
-# Media (if base-directory is changed to this local folder)
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Sync state, seed index, logs, orphans list (only relevant if base_directory is inside the repo)
+.smugmug-sync*
 mirror/
-
-# SQLite archive and its journal/WAL files; keep the legacy name ignored too
-.sync-archive.sqlite3*
-.sync-archive.txt*
-
-# Optional logs
-.gallery-dl.log*
